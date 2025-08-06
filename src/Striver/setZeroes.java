@@ -1,4 +1,4 @@
-package Arrays;
+package Striver;
 
 public class setZeroes {
     public void setZeroes(int[][] matrix) {
