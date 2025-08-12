@@ -1,4 +1,4 @@
-package Crio;
+package CrioDsa101;
 
 public class countVowels {
 //    static int countVowels(String str) {

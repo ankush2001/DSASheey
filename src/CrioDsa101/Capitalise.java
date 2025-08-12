@@ -1,4 +1,4 @@
-package Crio;
+package CrioDsa101;
 
 public class Capitalise {
     /**

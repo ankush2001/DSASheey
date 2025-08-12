@@ -1,6 +1,6 @@
-package Crio;
+package CrioDsa101;
 
-public class fibonnaci {
+public class Fibonacci {
     static int fibonacci(int n) {
         if (n <= 1) {
             return n;

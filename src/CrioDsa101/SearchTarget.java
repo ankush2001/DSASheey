@@ -1,7 +1,6 @@
-package Crio;
+package CrioDsa101;
 
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SearchTarget {

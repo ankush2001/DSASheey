@@ -1,5 +1,4 @@
-package Crio;
-import java.util.Arrays;
+package CrioDsa101;
 import java.util.Scanner;
 
 public class MaxProduct2 {
