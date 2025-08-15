@@ -11,7 +11,7 @@ if your string was: aaaaAAAA, your output would be: A 4, because A has lower ASC
     static Object[] mostFrequent(String s) {
         if (s.length() == 0){
             return new Object[]{null, 0}; // Return null and 0 if the string is empty
-          }
+        }
         Map<Character, Integer> map = new HashMap<>(); // character -> frequency
 
         for (char c : s.toCharArray()) {
@@ -46,7 +46,7 @@ if your string was: aaaaAAAA, your output would be: A 4, because A has lower ASC
         return count; // Return the frequency of character c in string s
     }
     static Object[] mostFrequent_1(String s) {
-       for (int ascii = 0; ascii < 256; ascii++) {
+        for (int ascii = 0; ascii < 256; ascii++) {
             int count = findFrequency(s, (char) ascii);
             if (count > 0) {
                 return new Object[]{(char) ascii, count}; // Return the first character with its frequency
