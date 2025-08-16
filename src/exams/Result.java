@@ -19,6 +19,10 @@ One optimal subsequence of length exactly k is "ooxx". The
 public class Result {
    // In a URL shortening service, the URL is given as a string url consisting of lowercase English letters.public
 
+//    static String sortUrl(String url) {
+//
+////        return ;
+//    }
 
     public static void main(String[] args) {
         String url = "ooxoxo";
