@@ -36,5 +36,10 @@ public class GCD {
         return findGCD2(b, a % b);
         // time complexity O(log(min(a, b))),
         // space complexity O(log(min(a, b))) due to recursion stack
-    }
+    }//describe -->
+    // the Euclidean algorithm is a method for computing the greatest common divisor (GCD) of two integers.
+    // It is based on the principle that the GCD of two numbers also divides their difference.
+    // The algorithm works by repeatedly replacing the larger number with the remainder of the division of
+    // the two numbers until one of them becomes zero. The other number at that point will be the GCD.
+    // This method is efficient and has a logarithmic time complexity relative to the size of the input numbers.
 }
