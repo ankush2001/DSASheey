@@ -3,18 +3,20 @@ package CrioDsa101;
 import java.util.ArrayList;
 import java.util.List;
 
-class ListNode {
-    int data;
-    ListNode next;
 
-    ListNode(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
 public class LinkedListSplit {
 
-    public List<ListNode> linkedListSplit(ListNode head){
+    static class ListNode {
+        int data;
+        ListNode next;
+
+        ListNode(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    List<ListNode> linkedListSplit(ListNode head){
         ListNode oddHead = null , oddTail = null;
         ListNode evenHead = null , evenTail = null;
 
@@ -49,7 +51,7 @@ public class LinkedListSplit {
         // Prepare the result
         List<ListNode> result = new ArrayList<>();
         result.add(oddHead); // head of odd list
-        result.add(evenHead); // head of even list list
+        result.add(evenHead); // head of even list
 
         return result;
     }
@@ -69,7 +71,7 @@ public class LinkedListSplit {
 
         // Print the odd list
         System.out.print("Odd List: ");
-        ListNode oddHead = result.get(0);
+        ListNode oddHead = result.getFirst();
         while (oddHead != null) {
             System.out.print(oddHead.data + " ");
             oddHead = oddHead.next;
