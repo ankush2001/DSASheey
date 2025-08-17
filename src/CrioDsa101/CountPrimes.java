@@ -56,6 +56,6 @@ public class CountPrimes {
 
         }
         return true;
-    }
+    } // This method checks if a number is prime by testing divisibility from 2 to the square root of the number.
     // time complexity: O(n * sqrt(n)), space complexity: O(1)
 }
