@@ -34,4 +34,28 @@ public class CountPrimes {
 
         return count;
     } //time complexity: O(n log log n), space complexity: O(n)
+
+    public int countPrimes_2(int n) {
+
+        int count = 0;
+        for(int i = 2 ; i < n ; i++){
+            if(isPrime(i)) {
+                count ++;
+            }
+        }
+
+        return count;
+    }
+
+    public boolean isPrime(int input){
+
+        for(int i = 2 ; i*i <= input ; i++){
+            if(input % i == 0){
+                return false ;
+            }
+
+        }
+        return true;
+    }
+    // time complexity: O(n * sqrt(n)), space complexity: O(1)
 }
