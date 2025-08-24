@@ -6,12 +6,23 @@ import java.util.Scanner;
 public class BinaryTree {
 
     static Scanner sc = new Scanner(System.in);
-    static ArrayList<Integer> list = new ArrayList<>();
+    static ArrayList<Integer> preList = new ArrayList<>();
+    static ArrayList<Integer> postList = new ArrayList<>();
+    static ArrayList<Integer> inList = new ArrayList<>();
+
     public static void main(String[] args) {
         TreeNode node = CreateBinaryTree();
-        preOrder(node,list);
-        System.out.println("---------Data----------");
-        System.out.println(list.toString());
+        preOrder(node,preList);
+        System.out.println("---------PreOrder Data----------");
+        System.out.println(preList.toString());
+
+        postOrder(node,postList);
+        System.out.println("---------PostOrder Data----------");
+        System.out.println(postList.toString());
+
+        inOrder(node,inList);
+        System.out.println("---------InOrder Data----------");
+        System.out.println(inList.toString());
     }
 
     private static void preOrder(TreeNode node, ArrayList<Integer> list) {
