@@ -41,6 +41,7 @@ public class AdditionOfMatrix {
         };
 
         int[][] result = new int[matrix1.length][matrix1[0].length];
+        result = addMatrices(matrix1, matrix2, 0, 0, result);
         System.out.println("Resultant Matrix:");
         for (int[] row : result) {
             for (int value : row) {
