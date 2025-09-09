@@ -1,4 +1,4 @@
-package CrioDsa101;
+package CrioDsa101.question;
 
 public class DiagonalSumFromGivenPoint {
     public static void main(String[] args) {
